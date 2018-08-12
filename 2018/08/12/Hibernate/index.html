@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="cn">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaEE," />
 
 
 
@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="架构 Hibernate实现了 JPA (Java Persistence API) 规范，JPA 接口和 Hibernate 特定实现之间的关联可以在下图中可视化：   Hibernate 将类型分为两种 value type entity type  value type 在 Hibernate 中有三种子类别  基本类型 可以由 Hibernate 在 Java Bean 与 DB 之间转换">
+<meta name="keywords" content="JavaEE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/08/12/hello-world/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-12T10:03:11.331Z">
+<meta property="og:title" content="Hibernate">
+<meta property="og:url" content="http://yoursite.com/2018/08/12/Hibernate/index.html">
+<meta property="og:site_name" content="xiaop1ng">
+<meta property="og:description" content="架构 Hibernate实现了 JPA (Java Persistence API) 规范，JPA 接口和 Hibernate 特定实现之间的关联可以在下图中可视化：   Hibernate 将类型分为两种 value type entity type  value type 在 Hibernate 中有三种子类别  基本类型 可以由 Hibernate 在 Java Bean 与 DB 之间转换">
+<meta property="og:locale" content="cn">
+<meta property="og:image" content="http://yoursite.com/2018/08/12/Hibernate/img/hibernate架构.png">
+<meta property="og:image" content="http://yoursite.com/2018/08/12/Hibernate/img/hibernate_02.png">
+<meta property="og:updated_time" content="2018-08-12T11:00:26.987Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Hibernate">
+<meta name="twitter:description" content="架构 Hibernate实现了 JPA (Java Persistence API) 规范，JPA 接口和 Hibernate 特定实现之间的关联可以在下图中可视化：   Hibernate 将类型分为两种 value type entity type  value type 在 Hibernate 中有三种子类别  基本类型 可以由 Hibernate 在 Java Bean 与 DB 之间转换">
+<meta name="twitter:image" content="http://yoursite.com/2018/08/12/Hibernate/img/hibernate架构.png">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/12/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/12/Hibernate/"/>
 
 
 
 
 
-  <title>Hello World | Hexo</title>
+  <title>Hibernate | xiaop1ng</title>
   
 
 
@@ -137,7 +141,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="cn">
 
   
   
@@ -155,12 +159,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">xiaop1ng</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">追寻水中桥</p>
       
   </div>
 
@@ -232,16 +236,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/Hibernate/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="xiaop1ng">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="xiaop1ng">
     </span>
 
     
@@ -249,7 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Hibernate</h1>
         
 
         <div class="post-meta">
@@ -261,7 +265,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-12T18:03:11+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-12T18:52:39+08:00">
                 2018-08-12
               </time>
             
@@ -299,15 +303,45 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h4 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h4><p><img src="img/hibernate架构.png" alt="hibernate"></p>
+<p>Hibernate实现了 JPA (Java Persistence API) 规范，JPA 接口和 Hibernate 特定实现之间的关联可以在下图中可视化： </p>
+<p><img src="img/hibernate_02.png" alt="Hibernate"></p>
+<h4 id="Hibernate-将类型分为两种"><a href="#Hibernate-将类型分为两种" class="headerlink" title="Hibernate 将类型分为两种"></a>Hibernate 将类型分为两种</h4><ul>
+<li>value type</li>
+<li>entity type</li>
+</ul>
+<p>value type 在 <code>Hibernate</code> 中有三种子类别</p>
+<ul>
+<li>基本类型<ul>
+<li>可以由 <code>Hibernate</code> 在 Java Bean 与 DB 之间转换的数据类型</li>
+</ul>
+</li>
+<li>可嵌入的类型由 <code>@Embeddable</code> 注解的对象作为 Java Bean 的属性</li>
+<li>集合类型</li>
+</ul>
+<h4 id="实体映射"><a href="#实体映射" class="headerlink" title="实体映射"></a>实体映射</h4><p>可以有用户显式制定（使用 <code>@Table</code> 或 <code>@Column</code>）, 也可以由 Hibernate 通过 <a href="http://docs.jboss.org/hibernate/orm/5.3/userguide/html_single/Hibernate_User_Guide.html#ImplicitNamingStrategy" target="_blank" rel="noopener">ImplicitNamingStrategy</a> 契约隐式确定 。 </p>
+<p>其中 JPA 定义的隐式命名规则务必坚持使用 <code>ImplicitNamingStrategyJpaCompliantImpl</code>（默认值） </p>
+<h4 id="Basic"><a href="#Basic" class="headerlink" title="@Basic"></a>@Basic</h4><p>javax.persistence.Basic , 通常 <code>@Basic</code> 可以省略，<code>@Basic</code> 将实体的成员标记为 Hibernate 的基础类型</p>
+<p>JPA 规范严格的限制了可以被标记为 <code>@Basic</code> 的 Java 类型：</p>
+<ul>
+<li>Java基本类型（<code>boolean</code>，<code>int</code>，等） </li>
+<li>包装的原始类型（<code>java.lang.Boolean</code>，<code>java.lang.Integer</code> 等） </li>
+<li>java.lang.String </li>
+<li>java.math.BigInteger </li>
+<li>java.math.BigDecimal </li>
+<li>java.util.Date </li>
+<li>java.util.Calendar </li>
+<li>java.sql.Date </li>
+<li>java.sql.Time </li>
+<li>java.sql.Timestamp </li>
+<li><code>byte[]</code> 要么 <code>Byte[]</code> </li>
+<li><code>char[]</code> 要么 <code>Character[]</code> </li>
+<li>enums </li>
+<li>实现的任何其他类型 <code>Serializable</code> （JPA对 <code>Serializable</code> 类型的“支持” 是直接将其状态序列化到数据库）。 </li>
+</ul>
+<h4 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Formula</span>(<span class="string">"lastLoginTime - createTime"</span>)</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">long</span> joinTime;</span><br></pre></td></tr></table></figure>
+<h4 id="CreationTimestamp-与-UpdateTimestamp"><a href="#CreationTimestamp-与-UpdateTimestamp" class="headerlink" title="@CreationTimestamp 与 @UpdateTimestamp"></a>@CreationTimestamp 与 @UpdateTimestamp</h4><p>创建时间和更新时间自动维护</p>
+<h4 id="官方指南"><a href="#官方指南" class="headerlink" title="官方指南"></a>官方指南</h4><p><a href="http://docs.jboss.org/hibernate/orm/5.3/userguide/html_single/Hibernate_User_Guide.html" target="_blank" rel="noopener">http://docs.jboss.org/hibernate/orm/5.3/userguide/html_single/Hibernate_User_Guide.html</a></p>
 
       
     </div>
@@ -323,11 +357,37 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/JavaEE/" rel="tag"># JavaEE</a>
+          
+        </div>
+      
 
       
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/12/SpringBoot CLI/" rel="next" title="SpringBoot CLI">
+                <i class="fa fa-chevron-left"></i> SpringBoot CLI
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/12/Spring Core/" rel="prev" title="Spring Core">
+                Spring Core <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -390,7 +450,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">xiaop1ng</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -401,7 +461,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -409,6 +469,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
@@ -438,7 +507,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#架构"><span class="nav-number">1.</span> <span class="nav-text">架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hibernate-将类型分为两种"><span class="nav-number">2.</span> <span class="nav-text">Hibernate 将类型分为两种</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实体映射"><span class="nav-number">3.</span> <span class="nav-text">实体映射</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic"><span class="nav-number">4.</span> <span class="nav-text">@Basic</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#计算属性"><span class="nav-number">5.</span> <span class="nav-text">计算属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CreationTimestamp-与-UpdateTimestamp"><span class="nav-number">6.</span> <span class="nav-text">@CreationTimestamp 与 @UpdateTimestamp</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#官方指南"><span class="nav-number">7.</span> <span class="nav-text">官方指南</span></a></li></ol></div>
             
 
           </div>
@@ -462,7 +531,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">xiaop1ng</span>
 
   
 </div>

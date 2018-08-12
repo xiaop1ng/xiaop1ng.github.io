@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="dubbo 分布式," />
+  <meta name="keywords" content="JavaEE," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Dubbo 是啥？ 一款分布式服务框架 高性能和透明化的RPC远程服务调用方案 SOA服务治理方案  每天为2千多个服务提供大于30亿次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点以及别的公司的业务中。 参考文档https://juejin.im/post/5a37600b6fb9a0450671b86a http://dubbo.apache.org/#!/docs/admin/insta">
-<meta name="keywords" content="dubbo 分布式">
+<meta name="description" content="Java 8 中的 Streams API引子在 Java 8 中加入很多新的 API，其中关于集合和数组增强功能的 API 可以说是备受好评。Streams API 很大程度上方便了 Java 开发过程中对于数据的操作和计算了。我们写一个简单的栗子对比一下在使用到 Streams API 时的便利  求数组 [7, 8, 4, 5, 1, 6, 4, 1, 9] 中所有的奇数的和  Java 7">
+<meta name="keywords" content="JavaEE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dubbo 学习">
-<meta property="og:url" content="http://yoursite.com/2018/08/12/Dubbo-学习/index.html">
+<meta property="og:title" content="Streams API">
+<meta property="og:url" content="http://yoursite.com/2018/08/12/Steams API/index.html">
 <meta property="og:site_name" content="xiaop1ng">
-<meta property="og:description" content="Dubbo 是啥？ 一款分布式服务框架 高性能和透明化的RPC远程服务调用方案 SOA服务治理方案  每天为2千多个服务提供大于30亿次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点以及别的公司的业务中。 参考文档https://juejin.im/post/5a37600b6fb9a0450671b86a http://dubbo.apache.org/#!/docs/admin/insta">
+<meta property="og:description" content="Java 8 中的 Streams API引子在 Java 8 中加入很多新的 API，其中关于集合和数组增强功能的 API 可以说是备受好评。Streams API 很大程度上方便了 Java 开发过程中对于数据的操作和计算了。我们写一个简单的栗子对比一下在使用到 Streams API 时的便利  求数组 [7, 8, 4, 5, 1, 6, 4, 1, 9] 中所有的奇数的和  Java 7">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2018-08-12T10:55:13.497Z">
+<meta property="og:updated_time" content="2018-08-12T11:02:32.206Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dubbo 学习">
-<meta name="twitter:description" content="Dubbo 是啥？ 一款分布式服务框架 高性能和透明化的RPC远程服务调用方案 SOA服务治理方案  每天为2千多个服务提供大于30亿次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点以及别的公司的业务中。 参考文档https://juejin.im/post/5a37600b6fb9a0450671b86a http://dubbo.apache.org/#!/docs/admin/insta">
+<meta name="twitter:title" content="Streams API">
+<meta name="twitter:description" content="Java 8 中的 Streams API引子在 Java 8 中加入很多新的 API，其中关于集合和数组增强功能的 API 可以说是备受好评。Streams API 很大程度上方便了 Java 开发过程中对于数据的操作和计算了。我们写一个简单的栗子对比一下在使用到 Streams API 时的便利  求数组 [7, 8, 4, 5, 1, 6, 4, 1, 9] 中所有的奇数的和  Java 7">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/12/Dubbo-学习/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/12/Steams API/"/>
 
 
 
 
 
-  <title>Dubbo 学习 | xiaop1ng</title>
+  <title>Streams API | xiaop1ng</title>
   
 
 
@@ -233,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/Dubbo-学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/Steams API/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaop1ng">
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Dubbo 学习</h1>
+          <h1 class="post-title" itemprop="name headline">Streams API</h1>
         
 
         <div class="post-meta">
@@ -300,34 +300,35 @@
       
 
       
-        <h1 id="Dubbo-是啥？"><a href="#Dubbo-是啥？" class="headerlink" title="Dubbo 是啥？"></a>Dubbo 是啥？</h1><ul>
-<li>一款分布式服务框架</li>
-<li>高性能和透明化的RPC远程服务调用方案</li>
-<li>SOA服务治理方案</li>
+        <h1 id="Java-8-中的-Streams-API"><a href="#Java-8-中的-Streams-API" class="headerlink" title="Java 8 中的 Streams API"></a>Java 8 中的 Streams API</h1><h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>在 Java 8 中加入很多新的 API，其中关于集合和数组增强功能的 API 可以说是备受好评。Streams API 很大程度上方便了 Java 开发过程中对于数据的操作和计算了。我们写一个简单的栗子对比一下在使用到 Streams API 时的便利</p>
+<blockquote>
+<p>求数组 [7, 8, 4, 5, 1, 6, 4, 1, 9] 中所有的奇数的和</p>
+</blockquote>
+<p>Java 7<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int [] array = &#123;7, 8, 4, 5, 1, 6, 4, 1, 9&#125;;</span><br><span class="line">int sum1 = 0;</span><br><span class="line">for (int i = 0; i &lt; array.length; i++) &#123;</span><br><span class="line">	if(array[i]%2 != 0) &#123;</span><br><span class="line">		sum1 += array[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(sum1); // 23</span><br></pre></td></tr></table></figure></p>
+<p>Java 8 use Streams API<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int [] array = &#123;7, 8, 4, 5, 1, 6, 4, 1, 9&#125;;</span><br><span class="line">int sum2 = Arrays.stream(array).filter(i -&gt; i%2 != 0).sum();</span><br><span class="line">System.out.println(sum2); // 23</span><br></pre></td></tr></table></figure></p>
+<p>可以看的出来，当使用到 Streams API 结合 Lambda 表达式来操作集合或者数组的时候，代码变得很简洁，可读性也大大的提升了。</p>
+<h1 id="Streams-是啥呢"><a href="#Streams-是啥呢" class="headerlink" title="Streams 是啥呢"></a>Streams 是啥呢</h1><p>关于 <code>java.util.stream.Stream</code> 首先需要说明的是 Stream 不是集合，不保存数据，他是关于算法（计算）的，可以进行 <code>map</code>、<code>filter</code> 等操作（熟悉 JavaScript 的同学应该非常习惯对数组使用这些操作）。<code>Stream</code> 就如同一个迭代器，而和迭代器又不同的是，Stream 可以并行化操作。 <code>Stream</code> 的另一特点是，数据源本身可以是无限的。</p>
+<blockquote>
+<p>我们使用一个 <code>Streams</code> 的时候，通常是三个基本步骤 1.获取数据源 -&gt; 2.数据转换 -&gt; 3.执行操作获取想要的结果</p>
+</blockquote>
+<h2 id="如何获取一个-Streams"><a href="#如何获取一个-Streams" class="headerlink" title="如何获取一个 Streams"></a>如何获取一个 Streams</h2><p>常用的获取一个 <code>Streams</code> 的方法有：</p>
+<ul>
+<li><p>数组或集合</p>
+<blockquote>
+<p>Collection.stream() // 单管<br>Collection.parallelStream() // 多管<br>Arrays.stream(T array) or Stream.of()</p>
+</blockquote>
+</li>
+<li><p>静态工厂</p>
+<blockquote>
+<p>java.util.stream.IntStream.range()<br>java.nio.file.Files.walk()</p>
+</blockquote>
+</li>
 </ul>
-<p>每天为2千多个服务提供大于30亿次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点以及别的公司的业务中。</p>
-<h1 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h1><p><a href="https://juejin.im/post/5a37600b6fb9a0450671b86a" target="_blank" rel="noopener">https://juejin.im/post/5a37600b6fb9a0450671b86a</a></p>
-<p><a href="http://dubbo.apache.org/#!/docs/admin/install/provider-demo.md?lang=zh-cn" target="_blank" rel="noopener">http://dubbo.apache.org/#!/docs/admin/install/provider-demo.md?lang=zh-cn</a></p>
-<h1 id="Dubbo-注册中心"><a href="#Dubbo-注册中心" class="headerlink" title="Dubbo 注册中心"></a>Dubbo 注册中心</h1><p>对于服务提供方，它需要发布服务，而且由于应用系统的复杂性，服务的数量、类型也不断膨胀；<br>对于服务消费方，它最关心如何获取到它所需要的服务，而面对复杂的应用系统，需要管理大量的服务调用。<br>而且，对于服务提供方和服务消费方来说，他们还有可能兼具这两种角色，即既需要提供服务，有需要消费服务。</p>
-<p>通过将服务统一管理起来，可以有效地优化内部应用对服务发布/使用的流程和管理。服务注册中心可以通过特定协议来完成服务对外的统一。</p>
-<h1 id="ZooKeeper"><a href="#ZooKeeper" class="headerlink" title="ZooKeeper"></a>ZooKeeper</h1><h2 id="ZooKeeper-是啥"><a href="#ZooKeeper-是啥" class="headerlink" title="ZooKeeper 是啥"></a>ZooKeeper 是啥</h2><p>ZooKeeper是Apache软件基金会的一个软件项目，他为大型分布式计算提供开源的分布式配置服务、同步服务和命名注册。<br>ZooKeeper曾经是Hadoop的一个子项目，但现在是一个独立的顶级项目。</p>
-<h2 id="目录接口"><a href="#目录接口" class="headerlink" title="目录接口"></a>目录接口</h2><ul>
-<li>bin<br>可执行脚本</li>
-<li>conf<br>配置（生效的配置文件为 <code>zoo.cfg</code>）</li>
-<li>lib<br>依赖包</li>
-<li>contrib<br>一些用于操作zk的工具包</li>
-<li>recipes<br>zk某些用法的代码示例</li>
-</ul>
-<h1 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h1><h2 id="Scope-类型"><a href="#Scope-类型" class="headerlink" title="Scope 类型"></a>Scope 类型</h2><ol>
-<li>compile：默认值 他表示被依赖项目需要参与当前项目的编译，还有后续的测试，运行周期也参与其中，是一个比较强的依赖。打包的时候通常需要包含进去</li>
-<li>test：依赖项目仅仅参与测试相关的工作，包括测试代码的编译和执行，不会被打包，例如：junit</li>
-<li>runtime：表示被依赖项目无需参与项目的编译，不过后期的测试和运行周期需要其参与。与compile相比，跳过了编译而已。例如JDBC驱动，适用运行和测试阶段</li>
-<li>provided：打包的时候可以不用包进去，别的设施会提供。事实上该依赖理论上可以参与编译，测试，运行等周期。相当于compile，但是打包阶段做了exclude操作</li>
-<li>system：从参与度来说，和provided相同，不过被依赖项不会从maven仓库下载，而是从本地文件系统拿。需要添加systemPath的属性来定义路径</li>
-</ol>
-<h2 id="依赖的传递性"><a href="#依赖的传递性" class="headerlink" title="依赖的传递性"></a>依赖的传递性</h2><p>A依赖B，B依赖C。当前项目为A，只当B在A项目中的scope，那么c在A中的scope是如何得知呢？</p>
-<p>当C是test或者provided时，C直接被丢弃，A不依赖C；（排除传递依赖）</p>
-<p>否则A依赖C，C的scope继承与B的scope</p>
+<h2 id="如何去使用一个-Streams"><a href="#如何去使用一个-Streams" class="headerlink" title="如何去使用一个 Streams"></a>如何去使用一个 Streams</h2><p>流的操作类型分为两种：</p>
+<blockquote>
+<p>Intermediate：一个流可以后面跟随零个或多个 intermediate 操作。其目的主要是打开流，做出某种程度的数据映射/过滤，然后返回一个新的流，交给下一个操作使用。这类操作都是惰性化的（lazy），就是说，仅仅调用到这类方法，并没有真正开始流的遍历。<br>map (mapToInt, flatMap 等)、 filter、 distinct、 sorted、 peek、 limit、 skip、 parallel、 sequential、 unordered<br>Terminal：一个流只能有一个 terminal 操作，当这个操作执行后，流就被使用“光”了，无法再被操作。所以这必定是流的最后一个操作。Terminal 操作的执行，才会真正开始流的遍历，并且会生成一个结果，或者一个 side effect。<br>forEach、 forEachOrdered、 toArray、 reduce、 collect、 min、 max、 count、 anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 iterator</p>
+</blockquote>
+<p>转换大写的一个应用，<code>map</code> 操作通常也被应用在对象转换上比如在 web 开发中将数据库中查询到的数据转换为 api 中适用的对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; stringList = new ArrayList&lt;&gt;();</span><br><span class="line">stringList.add(&quot;ni&quot;);</span><br><span class="line">stringList.add(&quot;Zhen&quot;);</span><br><span class="line">stringList.add(&quot;mEi&quot;);</span><br><span class="line">List&lt;String&gt; upperCaseStringList = stringList.stream().map(String::toUpperCase).collect(Collectors.toList());</span><br><span class="line">for (String word : upperCaseStringList) &#123;</span><br><span class="line">	System.out.println(word); // NI ZHEN MEI</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -345,7 +346,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/dubbo-分布式/" rel="tag"># dubbo 分布式</a>
+            <a href="/tags/JavaEE/" rel="tag"># JavaEE</a>
           
         </div>
       
@@ -358,8 +359,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/12/Java 中的函数式编程/" rel="next" title="Java 中的函数式编程">
-                <i class="fa fa-chevron-left"></i> Java 中的函数式编程
+              <a href="/2018/08/12/WeChat 小程序/" rel="next" title="小程序开发">
+                <i class="fa fa-chevron-left"></i> 小程序开发
               </a>
             
           </div>
@@ -368,8 +369,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/12/Spring 配置文件/" rel="prev" title="Spring 配置">
-                Spring 配置 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/12/SpringBoot CLI/" rel="prev" title="SpringBoot CLI">
+                SpringBoot CLI <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -493,7 +494,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Dubbo-是啥？"><span class="nav-number">1.</span> <span class="nav-text">Dubbo 是啥？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文档"><span class="nav-number">2.</span> <span class="nav-text">参考文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dubbo-注册中心"><span class="nav-number">3.</span> <span class="nav-text">Dubbo 注册中心</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ZooKeeper"><span class="nav-number">4.</span> <span class="nav-text">ZooKeeper</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ZooKeeper-是啥"><span class="nav-number">4.1.</span> <span class="nav-text">ZooKeeper 是啥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录接口"><span class="nav-number">4.2.</span> <span class="nav-text">目录接口</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Maven"><span class="nav-number">5.</span> <span class="nav-text">Maven</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Scope-类型"><span class="nav-number">5.1.</span> <span class="nav-text">Scope 类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖的传递性"><span class="nav-number">5.2.</span> <span class="nav-text">依赖的传递性</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-8-中的-Streams-API"><span class="nav-number">1.</span> <span class="nav-text">Java 8 中的 Streams API</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引子"><span class="nav-number">2.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Streams-是啥呢"><span class="nav-number">3.</span> <span class="nav-text">Streams 是啥呢</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何获取一个-Streams"><span class="nav-number">3.1.</span> <span class="nav-text">如何获取一个 Streams</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何去使用一个-Streams"><span class="nav-number">3.2.</span> <span class="nav-text">如何去使用一个 Streams</span></a></li></ol></li></ol></div>
             
 
           </div>
