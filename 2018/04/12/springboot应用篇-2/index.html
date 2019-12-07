@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SpringBoot 应用篇（二） | p</title>
+    <meta name="description" content="write and think.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.54e6617d.css" as="style"><link rel="preload" href="/assets/js/app.b2d079d1.js" as="script"><link rel="preload" href="/assets/js/4.b51533a6.js" as="script"><link rel="preload" href="/assets/js/5.389afcf9.js" as="script"><link rel="preload" href="/assets/js/25.8e1713c2.js" as="script"><link rel="prefetch" href="/assets/js/1.27e13ea7.js"><link rel="prefetch" href="/assets/js/10.004251e0.js"><link rel="prefetch" href="/assets/js/11.cd06fc8e.js"><link rel="prefetch" href="/assets/js/12.3cd4b06c.js"><link rel="prefetch" href="/assets/js/13.4e89d19c.js"><link rel="prefetch" href="/assets/js/14.aea7fdce.js"><link rel="prefetch" href="/assets/js/15.ee29fe4c.js"><link rel="prefetch" href="/assets/js/16.a2c4d93a.js"><link rel="prefetch" href="/assets/js/17.41ccc568.js"><link rel="prefetch" href="/assets/js/18.0c01e3ba.js"><link rel="prefetch" href="/assets/js/19.b1bda2de.js"><link rel="prefetch" href="/assets/js/20.3076d301.js"><link rel="prefetch" href="/assets/js/21.651302c0.js"><link rel="prefetch" href="/assets/js/22.a4789acc.js"><link rel="prefetch" href="/assets/js/23.47cebc09.js"><link rel="prefetch" href="/assets/js/24.91442e3a.js"><link rel="prefetch" href="/assets/js/26.4e22dd38.js"><link rel="prefetch" href="/assets/js/27.a5f2c859.js"><link rel="prefetch" href="/assets/js/6.10f77993.js"><link rel="prefetch" href="/assets/js/7.3cf4368b.js"><link rel="prefetch" href="/assets/js/8.656ea32a.js"><link rel="prefetch" href="/assets/js/9.ee931a16.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.e845127a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54e6617d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuperess-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">p
+        </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">编程</a></li><li class="nav-item"><a href="/post/" class="nav-link">文集</a></li><li class="nav-item"><a href="/tag/" class="nav-link">标签</a></li><li class="nav-item"><a href="/me.html" class="nav-link">About</a></li><li class="nav-item"><a href="https://github.com/xiaop1ng" target="_blank" rel="noopener noreferrer" class="nav-link external">Github</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">p
+      </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">编程</a></li><li class="mobile-nav-item"><a href="/post/" class="nav-link">文集</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">标签</a></li><li class="mobile-nav-item"><a href="/me.html" class="nav-link">About</a></li><li class="mobile-nav-item"><a href="https://github.com/xiaop1ng" target="_blank" rel="noopener noreferrer" class="nav-link external">Github</a></li></ul></div></div></div> <div class="content-wrapper"><div id="vuperess-theme-blog__post-layout"><div class="vuepress-blog-theme-content"><div class="content__default"><h1 id="springboot-应用篇（二）"><a href="#springboot-应用篇（二）" class="header-anchor">#</a> SpringBoot 应用篇（二）</h1> <h2 id="spring-胶水"><a href="#spring-胶水" class="header-anchor">#</a> Spring 胶水</h2> <p>上一篇介绍了 SpringBoot 的开箱使用，我们需要知道 SpringBoot 本质上是 Spring 的一个解决方案，在我看来， Spring 主要解决了对象之间协作关系（依赖）的管理和对业务间的共同步骤的抽取问题。
+解决这些问题的同时也创造了一些小小的问题，我们编写 Spring 应用程序时往往需要大量的配置工作，当然这也很正常：一个精密的仪器往往也需要小心协调配置才能正确工作。
+SpringBoot 为此而生，一系列的 <code>starter</code> 为我们解决了大量的配置工作。人类的进化史好像也是如此，进化的过程往往会带来许许多多的‘毛病’，然后我们在解决这些‘毛病’的过程中又会衍生出一些意想不到的‘毛病’，但是这些‘毛病’并不会阻止人类‘进化’的脚步。
+不得不说，Spring 这个优雅的框架是个多么有启发的方法论阿。</p> <h2 id="使用之前"><a href="#使用之前" class="header-anchor">#</a> 使用之前</h2> <p>SpringBoot 不仅优雅而且强大（漂亮得不像实力派，是吧？）
+使用之前还是看一下我们的小目标：
+一句话说就是：让 SpringBoot 给我们整一个好使的 web 框架粗来。
+怎么定义好使？
+模板能力(FreeMarker\Thymeleaf\mustache...)，我们在案例里面使用 FreeMarker；
+DB 能力，数据库连接使用 MySQL， 持久化层使用灵活的 MyBatis，数据库连接池使用阿里的 druid；还有部分第三方工具包就不在此赘述了。</p> <h2 id="结构"><a href="#结构" class="header-anchor">#</a> 结构</h2> <p><img src="https://img-blog.csdn.net/20180412141735786?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9waW5nMDkxNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="项目结构"></p> <h2 id="部分代码"><a href="#部分代码" class="header-anchor">#</a> 部分代码</h2> <ul><li>pom.xml</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>		&lt;!-- 模板引擎 FreeMarker --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+			&lt;artifactId&gt;spring-boot-starter-freemarker&lt;/artifactId&gt;
+		&lt;/dependency&gt;
+		
+		&lt;!-- 数据库连接池 Druid --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;com.alibaba&lt;/groupId&gt;
+			&lt;artifactId&gt;druid&lt;/artifactId&gt;
+			&lt;version&gt;1.1.0&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		&lt;!-- 数据库连接 mysql-connector-java --&gt;
+		&lt;dependency&gt;
+		    &lt;groupId&gt;mysql&lt;/groupId&gt;
+		    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+		    &lt;version&gt;5.1.6&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		&lt;!-- mybatis 对应 SpringBoot 的 starter --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;
+			&lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;
+			&lt;version&gt;1.3.1&lt;/version&gt;
+		&lt;/dependency&gt;
+		
+		&lt;!-- druid 对应 SpringBoot 的 starter --&gt;
+		&lt;dependency&gt;
+		    &lt;groupId&gt;com.alibaba&lt;/groupId&gt;
+		    &lt;artifactId&gt;druid-spring-boot-starter&lt;/artifactId&gt;
+		    &lt;version&gt;1.1.9&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		&lt;!-- basemapper --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;tk.mybatis&lt;/groupId&gt;
+			&lt;artifactId&gt;mapper-spring-boot-starter&lt;/artifactId&gt;
+			&lt;version&gt;1.2.4&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		&lt;!-- 分页工具 pagehelper --&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;com.github.pagehelper&lt;/groupId&gt;
+			&lt;artifactId&gt;pagehelper-spring-boot-starter&lt;/artifactId&gt;
+			&lt;version&gt;1.2.3&lt;/version&gt;
+		&lt;/dependency&gt;
+
+		
+		&lt;!-- 代码生成 mybatis-generator --&gt;
+		&lt;dependency&gt;
+		    &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
+		    &lt;artifactId&gt;mybatis-generator-core&lt;/artifactId&gt;
+		    &lt;version&gt;1.3.6&lt;/version&gt;
+		    &lt;scope&gt;compile&lt;/scope&gt;
+		    &lt;optional&gt;true&lt;/optional&gt;
+		&lt;/dependency&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><ul><li>App.java</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>@SpringBootApplication
+//扫描 mybatis mapper 包路径,注意需要修改成你自己的包路径
+@MapperScan(basePackages = &quot;com.xiaoping.mapper&quot;)
+//扫描 所有需要的包, 包含一些自用的工具类包 所在的路径
+@ComponentScan(basePackages= {&quot;com.xiaoping&quot;})
+public class App {
+    
+    public static void main(String[] args) throws Exception {
+    	// SpringApplication 将引导我们的应用，启动 Spring，相应地启动被自动配置的 Tomcat web 服务器。
+    	// 我们需要将 Example.class 作为参数传递给 run 方法，以此告诉 SpringApplication 
+    	// 谁是主要的 Spring 组件，并传递 args 数组以暴露所有的命令行参数。    
+        SpringApplication.run(App.class, args);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>application.properties</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># listen port 配置服务器监听的端口号，缺省值为 8080
+server.port=8080
+
+# datasource  配置数据源
+spring.datasource.url=jdbc:mysql://localhost:3306/test
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+# match all for URL 配置路由匹配规则是否可以带后缀
+# 开启后 /index 可以匹配任意后缀访问 -&gt; /index.html /index.php /index.*  eq /index
+spring.mvc.pathmatch.use-suffix-pattern=true
+
+# static resources 配置静态资源访问路径
+spring.mvc.static-path-pattern=/public/**
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>WebExceptionHandler.java</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 由于我们这里捕获的是 Exception ，只要服务端发生异常，程序会统一在此处理
+@ControllerAdvice
+public class WebExceptionHandler {
+
+	@ExceptionHandler(value = Exception.class)
+	public Object errorHandler(HttpServletRequest req, HttpServletResponse res, Exception e) {
+		e.printStackTrace();
+		ModelAndView mav = new ModelAndView();
+		mav.addObject(&quot;ex&quot;, e.getMessage());
+		mav.setViewName(&quot;error&quot;);
+		return mav;
+		
+	}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="run"><a href="#run" class="header-anchor">#</a> Run</h2> <p>当你访问 <code>127.0.0.1:8080</code> 或 <code>127.0.0.1:8080/index</code> 亦或是 <code>127.0.0.1:8080/index.html</code> 时，应该会看到：
+<img src="https://img-blog.csdn.net/20180412143347168?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9waW5nMDkxNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p> <h2 id="源码地址"><a href="#源码地址" class="header-anchor">#</a> 源码地址</h2> <p>https://github.com/xiaop1ng/PlayWithSpringBoot</p></div> <hr> <!----></div> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#spring-胶水" title="Spring 胶水">Spring 胶水</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#使用之前" title="使用之前">使用之前</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#结构" title="结构">结构</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#部分代码" title="部分代码">部分代码</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#run" title="Run">Run</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#源码地址" title="源码地址">源码地址</a></div></div></div></div> <footer class="footer" data-v-0d113134><div class="footer-left-wrap" data-v-0d113134><ul class="contact" data-v-0d113134><li class="contact-item" data-v-0d113134><a href="https://github.com/xiaop1ng" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-0d113134><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-0d113134></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-0d113134><ul class="copyright" data-v-0d113134><li class="copyright-item" data-v-0d113134><a href="https://policies.google.com/privacy?hl=en-US" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-0d113134>Privacy Policy</a></li><li class="copyright-item" data-v-0d113134><a href="/" class="nav-link" data-v-0d113134>Copyright xiaop1ng © 2019</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b2d079d1.js" defer></script><script src="/assets/js/4.b51533a6.js" defer></script><script src="/assets/js/5.389afcf9.js" defer></script><script src="/assets/js/25.8e1713c2.js" defer></script>
+  </body>
+</html>
